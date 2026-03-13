@@ -1,0 +1,163 @@
+{
+  "projectType": "saas",
+  "projectName": "Fleetbase",
+  "projectDescription": "Modular logistics and supply chain operating system for managing fleets, orders, and delivery operations.",
+  "theme": "aspen",
+  "primaryColor": "#4594ec",
+  "lightColor": "#99c4f4",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "why-fleetbase",
+              "use-cases"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/installation",
+              "getting-started/docker-installation",
+              "getting-started/quickstart",
+              "getting-started/first-order",
+              "getting-started/configuration"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/order-management",
+              "features/fleet-tracking",
+              "features/service-zones",
+              "features/route-optimization",
+              "features/dashboards",
+              "features/notifications"
+            ]
+          },
+          {
+            "group": "Extensions",
+            "pages": [
+              "extensions/overview",
+              "extensions/browsing-extensions",
+              "extensions/installing-extensions",
+              "extensions/fleetops",
+              "extensions/pallet",
+              "extensions/storefront"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/overview",
+              "deployment/docker",
+              "deployment/cloud-providers",
+              "deployment/environment-variables",
+              "deployment/security"
+            ]
+          },
+          {
+            "group": "Mobile Apps",
+            "pages": [
+              "mobile-apps/navigator-app",
+              "mobile-apps/storefront-app",
+              "mobile-apps/customization"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Developer Guide",
+        "groups": [
+          {
+            "group": "Development",
+            "pages": [
+              "developers/overview",
+              "developers/architecture",
+              "developers/development-setup"
+            ]
+          },
+          {
+            "group": "Building Extensions",
+            "pages": [
+              "developers/extensions/getting-started",
+              "developers/extensions/scaffolding",
+              "developers/extensions/backend-structure",
+              "developers/extensions/frontend-structure",
+              "developers/extensions/publishing"
+            ]
+          },
+          {
+            "group": "CLI Reference",
+            "pages": [
+              "developers/cli/overview",
+              "developers/cli/authentication",
+              "developers/cli/commands"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/errors"
+            ]
+          },
+          {
+            "group": "Core Resources",
+            "pages": [
+              "api/orders",
+              "api/drivers",
+              "api/vehicles",
+              "api/places",
+              "api/routes"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "api/tracking",
+              "api/webhooks",
+              "api/service-areas"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Order and delivery management with visual Kanban boards",
+    "Real-time fleet tracking and driver management",
+    "Service zone configuration and route optimization",
+    "Extensible plugin architecture with marketplace",
+    "RESTful API with webhooks and socket support",
+    "Multi-tenant IAM with dynamic permissions",
+    "Mobile apps for drivers and customers",
+    "Docker-based deployment with cloud and on-premise options"
+  ],
+  "publicApiSurface": [
+    "POST /orders - Create delivery orders",
+    "GET /orders/:id - Retrieve order details",
+    "GET /orders/:id/tracking - Track order in real-time",
+    "POST /drivers - Create driver profiles",
+    "GET /fleet/live - Get live fleet positions",
+    "POST /service-areas - Define service zones",
+    "POST /routes/optimize - Optimize delivery routes",
+    "GET /tracking/:id - Public tracking endpoint",
+    "POST /webhooks - Register webhook endpoints",
+    "flb install-fleetbase - Install Fleetbase via CLI",
+    "flb install <extension> - Install extensions",
+    "flb scaffold - Create new extension",
+    "flb publish - Publish extension to registry"
+  ]
+}
